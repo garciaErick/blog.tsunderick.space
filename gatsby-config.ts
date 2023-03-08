@@ -3,7 +3,19 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `blog.tsunderick.space`,
-    siteUrl: `https://blog.tsunderick.space`
+    siteUrl: `https://blog.tsunderick.space`,
+    author: `My Name`,
+    description: `My site description...`,
+    social: [
+      {
+        name: `twitter`,
+        url: `https://twitter.com/gatsbyjs`,
+      },
+      {
+        name: `github`,
+        url: `https://github.com/gatsbyjs`,
+      },
+    ],
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -28,6 +40,13 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  }, {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "posts",
+      "path": "./content/posts/"
+    },
+    __key: "posts"
   },
   {
       resolve: `gatsby-plugin-google-gtag`,
@@ -59,7 +78,13 @@ const config: GatsbyConfig = {
           delayOnRouteUpdate: 0,
         },
       },
-    }
+    },
+    // {
+    //   resolve: `gatsby-theme-blog`,
+    //   options: {
+    //     mdxOtherwiseConfigured: true
+    //   },
+    // },
 ]
 };
 
