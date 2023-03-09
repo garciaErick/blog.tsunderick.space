@@ -42,5 +42,15 @@ module.exports = {
         contentDir: "/content/", // Directory for MDX posts. Defaults to "content".
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `content`,
+        // Path to the directory
+        path: `${__dirname}/content/`,
+      },
+    },
+
   ],
 };
