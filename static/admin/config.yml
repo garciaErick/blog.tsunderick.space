@@ -5,21 +5,19 @@ media_folder: static/images/uploads
 public_folder: /uploads
 
 collections:
-  - name: 'public posts'
-    label: 'Blog'
+  - name: 'posts'
+    label: 'Public Posts'
     folder: 'content'
     create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
-    editor:
-      preview: false
-    # fields:
-    #   - { label: 'Title', name: 'title', widget: 'string' }
-    #   - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-    #   - { label: 'Description', name: 'description', widget: 'string' }
-    #   - { label: 'Body', name: 'body', widget: 'markdown' }
-    #   - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-    #   - { label: 'Description', name: 'description', widget: 'string' }
-    #   - { label: 'Body', name: 'body', widget: 'markdown' }
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}.md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publication Date", name: "datePublished", widget: "datetime" }
+      - { label: "Modification Date", name: "dateModified", widget: "datetime" }
+      - { label: "Cover Image", name: "cover", widget: "image" }
+      - { label: "Cover Image Alt", name: "coverAlt", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
