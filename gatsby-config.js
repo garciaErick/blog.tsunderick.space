@@ -39,7 +39,7 @@ module.exports = {
         },
 
         // Gatsby Configuration
-        contentDir: "/content/", // Directory for MDX posts. Defaults to "content".
+        contentDir: "content", // Directory for MDX posts. Defaults to "content".
       },
     },
     {
