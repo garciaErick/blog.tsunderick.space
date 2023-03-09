@@ -1,7 +1,15 @@
 ---
-title: "Some test "
-date: 2023-03-08T22:42:23.272Z
-description: this is the description
+title: "Bold Mage"
+cover: images/cover_1.jpeg
+coverAlt: "An image tagged as nature and water."
+description: "Description"
+datePublished: "2017-01-01"
+dateModified: "2017-01-01"
+category: "tech"
+tags:
+  - programming
+  - stuff
+  - other
 ---
 ![](2019_03_16_hitagi-senjougahara-12864035.png "efae")
 
