@@ -1,6 +1,5 @@
 ---
 title: "Bold Mage"
-cover: images/cover_1.jpeg
 coverAlt: "An image tagged as nature and water."
 description: "Description"
 datePublished: "2017-01-01"
